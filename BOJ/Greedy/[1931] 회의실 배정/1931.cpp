@@ -10,9 +10,9 @@ int main(){
     cin>>N;
     vector<pair<int,int> > meeting(N);
 
-    for(int i=0;i<N;i++)
+    for(int i=0;i<N;i++){
         cin>>meeting[i].second>>meeting[i].first; //시작을 second, 끝을 first
-    
+    }
     sort(meeting.begin(),meeting.end()); //끝을 기준으로 sort
     int result=1;
     int cur=meeting[0].first;
@@ -23,6 +23,6 @@ int main(){
         }
     }
     cout<<result<<'\n';
-
+    
     return 0;
 }
