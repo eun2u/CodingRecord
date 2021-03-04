@@ -15,4 +15,5 @@ order by ins.animal_id;
 
 ## LIKE
 '-' : 글자숫자를 정해줌(EX 컬럼명 LIKE '홍_동')
+
 '%' : 글자숫자를 정해주지않음(EX 컬럼명 LIKE '홍%')
