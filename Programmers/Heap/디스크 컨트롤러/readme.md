@@ -13,6 +13,15 @@
 - 현재 시간보다 작거나 같은 디스크가있다면 대기큐(priority queue)를 만들어서 push 한다.
     - 여기서 선언된 priority queue는 작업시간 순으로 오름차순 정렬되어있다.
 
+## Priority_Queue cmp
+```cpp
+struct cmp{
+    bool operator()(vector<int> a, vector<int> b){
+        return a[1]>b[1]; // 오름차순
+    }
+};
+```
+`return a[1]>b[1]` - 오름차순이다 기억하자!! sort에서와 
 
 ## 후기💡
 - 대기시간을 최소로 해야한다는 생각으로 풀이를 하려했는데 떠오르지가 않아서, 다른 사람 코드를 참고했다
